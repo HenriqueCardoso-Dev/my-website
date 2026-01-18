@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "JavaScript",
+    "icon": "⚡",
+    "rating": 4,
+    "color": "bg-yellow-500"
+  },
+  {
+    "id": 2,
+    "name": "TypeScript",
+    "icon": "📘",
+    "rating": 4,
+    "color": "bg-blue-600"
+  },
+  {
+    "id": 3,
+    "name": "React",
+    "icon": "⚛️",
+    "rating": 4,
+    "color": "bg-cyan-400"
+  },
+  {
+    "id": 4,
+    "name": "Next.js",
+    "icon": "▲",
+    "rating": 3,
+    "color": "bg-gray-900"
+  },
+  {
+    "id": 5,
+    "name": "Tailwind CSS",
+    "icon": "🎨",
+    "rating": 3,
+    "color": "bg-cyan-500"
+  },
+  {
+    "id": 6,
+    "name": "Node.js",
+    "icon": "🟢",
+    "rating": 2,
+    "color": "bg-green-600"
+  },
+  {
+    "id": 7,
+    "name": "PHP",
+    "icon": "🐘",
+    "rating": 4,
+    "color": "bg-blue-500"
+  },
+  {
+    "id": 8,
+    "name": "SQL",
+    "icon": "🗄️",
+    "rating": 2,
+    "color": "bg-orange-600"
+  },
+  {
+    "id": 9,
+    "name": "Git",
+    "icon": "🔀",
+    "rating": 4,
+    "color": "bg-red-600"
+  },
+  {
+    "id": 10,
+    "name": "Docker",
+    "icon": "🐳",
+    "rating": 1,
+    "color": "bg-blue-400"
+  }
+]

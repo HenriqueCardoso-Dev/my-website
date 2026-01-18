@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "MORENT - ALUGUEL DE CARROS",
+    "description": "Projeto em desenvolvimento de um sistema de aluguel de carros, onde os usuários poderão navegar por uma variedade de veículos, selecionar datas de aluguel e concluir reservas. O sistema também incluirá funcionalidades para processamento de pagamentos e avaliações de clientes.",
+    "image": "https://raw.githubusercontent.com/HenriqueCardoso-Dev/shopping-car/refs/heads/master/public/assets/img/Cover.png",
+    "link": "https://shopping-car-nine.vercel.app"
+  },
+  {
+    "id": 2,
+    "title": "Conversor de moedas 💲",
+    "description": "O App se refere a um sistema, cujo a sua função é a conversão de valores entre diferentes moedas.\nO projeto foi o resultado de um \"mini curso\" redigido por Rodolfo Mori no canal DevClub | Programação, onde o objetivo é ensinar o REACT NATIVE + EXPO na prática, desenvolvendo uma aplicação funcional, que pode ser utilizada no dia a dia.",
+    "image": "https://images.pexels.com/photos/5833314/pexels-photo-5833314.jpeg?_gl=1*f346v1*_ga*MTMzMDMzMzAzMS4xNzY3Mzc5Njk3*_ga_8JE65Q40S6*czE3NjczNzk2OTYkbzEkZzEkdDE3NjczNzk3ODUkajQ2JGwwJGgw",
+    "link": "https://github.com/HenriqueCardoso-Dev/conversor-app"
+  },
+  {
+    "id": 3,
+    "title": "CODEX",
+    "description": "O CODEX foi meu projeto de TCC em 2001 na ETEC de ITAQUAQUECETUBA, o mesmo tem como objetivo o desenvolvimento de um aplicativo para treinamento, inserção e reforço nas habilidades de desenvolver códigos em diferentes linguagens de programação. Ele oferece uma plataforma interativa onde os usuários podem praticar suas habilidades de codificação por meio de desafios e exercícios, abrangendo diversas linguagens e níveis de dificuldade.",
+    "image": "https://user-images.githubusercontent.com/63278045/117742901-1fd66d80-b1dc-11eb-924c-6d6809fda12f.png",
+    "link": "https://github.com/HenriqueCardoso-Dev/CODEX"
+  }
+]
