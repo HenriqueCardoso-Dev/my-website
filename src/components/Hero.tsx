@@ -115,7 +115,7 @@ const Hero = () => {
           <motion.div variants={itemVariants} className="space-y-4">
             <div className="relative inline-block">
               <motion.h1
-                className="text-6xl md:text-7xl lg:text-8xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent"
+                className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent"
                 animate={{ backgroundPosition: ['0%', '100%'] }}
                 transition={{ duration: 3, repeat: Infinity, repeatType: 'reverse' }}
               >
@@ -131,7 +131,7 @@ const Hero = () => {
             {/* Subtítulo com efeito de digitação */}
             <motion.p
               variants={itemVariants}
-              className="text-xl md:text-2xl lg:text-3xl text-gray-300 font-light"
+              className="text-base sm:text-lg md:text-2xl lg:text-3xl text-gray-300 font-light"
             >
               Desenvolvedor Full Stack apaixonado por criar{' '}
               <motion.span
@@ -156,7 +156,7 @@ const Hero = () => {
           {/* Descrição */}
           <motion.p
             variants={itemVariants}
-            className="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed"
+            className="text-gray-400 text-sm sm:text-base md:text-lg lg:text-lg max-w-2xl mx-auto leading-relaxed px-4"
           >
             Transformando ideias em código inteligente. Especializado em React, Next.js e desenvolvimento web moderno.
             Vamos criar algo incrível juntos?
@@ -169,7 +169,7 @@ const Hero = () => {
           >
             <motion.a
               href="#about"
-              className="px-8 py-4 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold text-lg hover:shadow-2xl transition-shadow duration-300"
+              className="px-5 py-3 sm:px-7 sm:py-3 md:px-8 md:py-4 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold text-sm sm:text-base md:text-lg hover:shadow-2xl transition-shadow duration-300"
               whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(34, 211, 238, 0.6)' }}
               whileTap={{ scale: 0.95 }}
             >
@@ -178,7 +178,7 @@ const Hero = () => {
 
             <motion.a
               href="#projects"
-              className="px-8 py-4 rounded-lg border-2 border-cyan-400 text-cyan-400 font-semibold text-lg hover:bg-cyan-400/10 transition-colors duration-300"
+              className="px-5 py-3 sm:px-7 sm:py-3 md:px-8 md:py-4 rounded-lg border-2 border-cyan-400 text-cyan-400 font-semibold text-sm sm:text-base md:text-lg hover:bg-cyan-400/10 transition-colors duration-300"
               whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(34, 211, 238, 0.3)' }}
               whileTap={{ scale: 0.95 }}
             >
