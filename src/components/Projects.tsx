@@ -20,7 +20,7 @@ const Projects = () => {
           {projectsData.map((project) => (
             <motion.div
               key={project.id}
-              className="bg-white/10 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden border border-white/20"
+              className="h-[600px] bg-white/10 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden border border-white/20"
               initial={{ y: 50, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: project.id * 0.1 }}
@@ -28,8 +28,14 @@ const Projects = () => {
               <Image src={project.image} alt={project.title} width={400} height={300} className="w-full h-48 object-cover" />
               <div className="p-4 text-white">
                 <h3 className="text-xl font-semibold mb-2 font-mono">{project.title}</h3>
-                <p className="text-gray-300 mb-4">{project.description}</p>
-                <a href={project.link} className="text-blue-300 hover:text-blue-100 transition-colors" target='blank'>Ver Projeto</a>
+                <p className="text-gray-300 mb-4 h-100 max-h-[250px]">{project.description}</p>
+              </div>
+              <div className='d-flex text-right mr-5'>
+                <a 
+                  href={project.link} 
+                  className="text-blue-300 hover:text-blue-100 transition-colors bg-blue-900 text-white py-3 px-5 rounded-full"
+                  target='blank'
+                >Ver Projeto </a>
               </div>
             </motion.div>
           ))}

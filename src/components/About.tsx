@@ -15,7 +15,7 @@ const About = () => {
     >
       <div className="absolute inset-0 bg-black/60"></div>
       <div className="mx-auto px-8 relative z-10 max-w-7xl">
-        <h2 className="text-3xl font-bold mb-8 text-center text-white font-mono">Sobre Mim</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center text-white font-mono">Sobre nós</h2>
         <div className="bg-white/10 backdrop-blur-sm rounded-lg shadow-lg border border-white/20 p-6">
           <div className="flex flex-col md:flex-row items-center">
             <motion.div
@@ -33,8 +33,8 @@ const About = () => {
               />
             </motion.div>
             <div className="text-white mt-6 md:mt-0 max-w-[900px]">
-              <h3 className="text-2xl font-semibold mb-2 font-mono">{aboutData.name}</h3>
-              <p className="text-lg text-gray-300 mb-4">{aboutData.title}</p>
+              <h3 className="text-2xl font-semibold font-mono">{aboutData.name}</h3>
+              <p className="text-md text-gray-300 mb-4 opacity-30">{aboutData.title}</p>
               <p className="text-gray-200">{aboutData.description}</p>
             </div>
           </div>
