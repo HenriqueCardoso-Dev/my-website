@@ -24,7 +24,14 @@
     "id": 4,
     "title": "Rede Liceu",
     "description": "Desenvolvi e realizei manutenções em diversas Landing Pages e sites institucionais para a Rede Liceu, uma instituição de ensino. Esses projetos envolveram a criação de páginas atraentes e funcionais para promover os cursos e serviços oferecidos pela instituição, garantindo uma experiência positiva para os visitantes e potenciais alunos.",
-    "image": "@assets/img/liceu.png",
+    "image": "https://github.com/HenriqueCardoso-Dev/my-website/blob/master/src/assets/LiceuProjectBanner.png?raw=true",
     "link": "https://liceubrasil.com.br"
+  },
+  {
+    "id": 5,
+    "title": "Claramente",
+    "description": "Projeto em desenvolvimento de um sistema de agendamento de consultas e cadastros de profissionais terceirizados de uma clinica de psicologia implementado com um sistema de Saas independente",
+    "image": "https://github.com/HenriqueCardoso-Dev/my-website/blob/master/src/assets/ClaramenteBanner.png?raw=true",
+    "link": "https://mentor-claramente.netlify.app"
   }
 ]
