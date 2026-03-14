@@ -15,7 +15,7 @@ const About = () => {
     >
       <div className="absolute inset-0 bg-black/60"></div>
       <div className="mx-auto px-8 relative z-10 max-w-7xl">
-        <h2 className="text-3xl font-bold mb-8 text-center text-white font-mono">Sobre nós</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center text-white font-mono">Sobre Mim</h2>
         <div className="bg-white/10 backdrop-blur-sm rounded-lg shadow-lg border border-white/20 p-6">
           <div className="flex flex-col md:flex-row items-center">
             <motion.div
