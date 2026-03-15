@@ -17,7 +17,7 @@ const Projects = () => {
       <div className="mx-auto px-8 relative z-10 max-w-7xl">
         <h2 className="text-3xl font-bold mb-8 text-center text-white font-mono">Projetos</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projectsData.map((project) => (
+          {projectsData.toReversed().map((project) => (
             <motion.div
               key={project.id}
               className="h-[600px] bg-white/10 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden border border-white/20"
@@ -25,7 +25,9 @@ const Projects = () => {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: project.id * 0.1 }}
             >
-              <Image src={project.image} alt={project.title} width={400} height={300} className="w-full h-48 object-cover" />
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <Image src={project.image} alt={project.title} width={400} height={300} className="w-full h-48 object-cover" />
+              </a>
               <div className="p-4 text-white">
                 <h3 className="text-xl font-semibold mb-2 font-mono">{project.title}</h3>
                 <p className="text-gray-300 mb-4 h-100 max-h-[250px]">{project.description}</p>

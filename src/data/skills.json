@@ -52,7 +52,7 @@
     "id": 8,
     "name": "SQL",
     "icon": "🗄️",
-    "rating": 2,
+    "rating": 3,
     "color": "bg-orange-600"
   },
   {
@@ -68,5 +68,47 @@
     "icon": "🐳",
     "rating": 1,
     "color": "bg-blue-400"
+  },
+  {
+    "id": 11,
+    "name": "Vue",
+    "icon": "🟢",
+    "rating": 3,
+    "color": "bg-emerald-800"
+  },
+  {
+    "id": 12,
+    "name": "Laravel",
+    "icon": "📙",
+    "rating": 4,
+    "color": "bg-orange-600"
+  },
+  {
+    "id": 13,
+    "name": "Webhook",
+    "icon": "🔗",
+    "rating": 4,
+    "color": "bg-gray-600"
+  },
+  {
+    "id": 14,
+    "name": "A.I.",
+    "icon": "🤖",
+    "rating": 2,
+    "color": "bg-blue-600"
+  },
+  {
+    "id": 15,
+    "name": "SellFlux",
+    "icon": "🛒",
+    "rating": 2,
+    "color": "bg-gray-500"
+  },
+  {
+    "id": 16,
+    "name": "n8n",
+    "icon": "🔧",
+    "rating": 1,
+    "color": "bg-orange-600"
   }
 ]
