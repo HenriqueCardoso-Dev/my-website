@@ -29,9 +29,9 @@
   },
   {
     "id": 5,
-    "title": "Claramente",
+    "title": "Mentor Claramente - em desenvolvimento",
     "description": "Projeto em desenvolvimento de um sistema de agendamento de consultas e cadastros de profissionais terceirizados de uma clinica de psicologia implementado com um sistema de Saas independente",
     "image": "https://github.com/HenriqueCardoso-Dev/my-website/blob/master/src/assets/ClaramenteBanner.png?raw=true",
-    "link": "https://mentor-claramente.netlify.app"
+    "link": "https://mentor-claramente-dev.netlify.app"
   }
 ]
