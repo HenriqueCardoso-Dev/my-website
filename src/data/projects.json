@@ -33,5 +33,12 @@
     "description": "Projeto em desenvolvimento de um sistema de agendamento de consultas e cadastros de profissionais terceirizados de uma clinica de psicologia implementado com um sistema de Saas independente",
     "image": "https://github.com/HenriqueCardoso-Dev/my-website/blob/master/src/assets/ClaramenteBanner.png?raw=true",
     "link": "https://mentor-claramente-dev.netlify.app"
+  },
+  {
+    "id": 6,
+    "title": "Gab's Estética Animal",
+    "description": "Projeto de um sistema de agendamento serviços de estética animal, onde os usuários podem marcar horários para seus pets, escolher os serviços desejados e receber notificações sobre os agendamentos. O sistema também inclui um painel de administração para gerenciar os agendamentos e os serviços oferecidos.",
+    "image": "https://github.com/HenriqueCardoso-Dev/my-website/blob/master/src/assets/gabs.png?raw=true",
+    "link": "https://gabsesteticaanimal.lovable.app"
   }
 ]
