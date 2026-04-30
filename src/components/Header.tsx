@@ -18,7 +18,7 @@ const Header = () => {
           className="text-2xl font-bold font-mono cursor-pointer"
           whileHover={{ scale: 1.05 }}
         >
-          Meu Portfólio
+          Henrique Cardoso
         </motion.a>
         <nav className="hidden md:block">
           <ul className="flex space-x-8">
