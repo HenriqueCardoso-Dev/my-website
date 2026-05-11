@@ -40,5 +40,12 @@
     "description": "Projeto de um sistema de agendamento serviços de estética animal, onde os usuários podem marcar horários para seus pets, escolher os serviços desejados e receber notificações sobre os agendamentos. O sistema também inclui um painel de administração para gerenciar os agendamentos e os serviços oferecidos.",
     "image": "https://github.com/HenriqueCardoso-Dev/my-website/blob/master/src/assets/gabs.png?raw=true",
     "link": "https://gabsesteticaanimal.lovable.app"
+  },
+  {
+    "id": 7,
+    "title": "Claramente - Landing Page",
+    "description": "Projeto de uma landing page para a clínica de psicologia Claramente, onde os visitantes podem obter informações sobre os serviços oferecidos, conhecer a equipe de profissionais e entrar em contato para agendar consultas. A landing page é projetada para ser atraente e informativa, incentivando os visitantes a se envolverem com a clínica.",
+    "image": "https://github.com/HenriqueCardoso-Dev/my-website/blob/master/src/assets/image.png?raw=true",
+    "link": "https://claramente.psc.br"
   }
 ]
