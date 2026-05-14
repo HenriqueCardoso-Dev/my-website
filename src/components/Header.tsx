@@ -51,6 +51,15 @@ const Header = () => {
             </li>
             <li>
               <a
+                href="#publications"
+                className="hover:text-emerald-200 transition-colors duration-300 relative group"
+              >
+                Publicações
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-200 transition-all duration-300 group-hover:w-full"></span>
+              </a>
+            </li>
+            <li>
+              <a
                 href="#contact"
                 className="hover:text-emerald-200 transition-colors duration-300 relative group"
               >
@@ -102,6 +111,15 @@ const Header = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Projetos
+              </a>
+            </li>
+            <li>
+              <a
+                href="#publications"
+                className="hover:text-emerald-200 transition-colors duration-300"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Publicações
               </a>
             </li>
             <li>

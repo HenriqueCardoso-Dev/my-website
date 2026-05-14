@@ -7,10 +7,12 @@ const Publications = () => {
     {
       id: 1,
       src: 'https://www.linkedin.com/embed/feed/update/urn:li:share:7458024136691359744?collapsed=1',
+      paddingBottom: '100%',
     },
     {
       id: 2,
       src: 'https://www.linkedin.com/embed/feed/update/urn:li:share:7456098451034923008',
+      paddingBottom: '100%',
     },
   ];
 
@@ -82,7 +84,7 @@ const Publications = () => {
             >
               <div className="relative bg-gradient-to-br from-slate-900/80 to-slate-800/70 backdrop-blur-sm rounded-xl overflow-hidden border border-emerald-400/20 hover:border-emerald-400/50 transition-colors duration-300 shadow-2xl">
                 {/* Iframe container responsivo */}
-                <div className="relative w-full" style={{ paddingBottom: '133%' }}>
+                <div className="relative w-full" style={{ paddingBottom: publication.paddingBottom }}>
                   <iframe
                     src={publication.src}
                     style={{
@@ -91,11 +93,13 @@ const Publications = () => {
                       left: 0,
                       width: '100%',
                       height: '100%',
+                      scrollbarWidth: 'none',
+                      msOverflowStyle: 'none',
                     }}
                     frameBorder="0"
                     allowFullScreen
                     title="Publicação LinkedIn"
-                    className="rounded-xl"
+                    className="rounded-xl hide-scrollbar"
                   />
                 </div>
               </div>

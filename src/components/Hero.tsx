@@ -37,23 +37,41 @@ const Hero = () => {
     },
   };
 
-  // Componente de partículas
-  const Particle = ({ delay }: { delay: number }) => (
+  type ParticleData = {
+    delay: number;
+    y: number[];
+    x: number[];
+    duration: number;
+    left: string;
+    top: string;
+  };
+
+  const particles: ParticleData[] = Array.from({ length: 20 }).map((_, i) => ({
+    delay: i * 0.12,
+    y: [0, ((i * 47) % 101) - 50],
+    x: [0, ((i * 31) % 101) - 50],
+    duration: 3 + (i % 3) + 0.5,
+    left: `${(i * 13) % 100}%`,
+    top: `${(i * 19) % 100}%`,
+  }));
+
+  const Particle = ({ data }: { data: ParticleData }) => (
     <motion.div
       initial={{ opacity: 0, scale: 0 }}
       animate={{
-        y: [0, Math.random() * 100 - 50],
-        x: [0, Math.random() * 100 - 50],
+        y: data.y,
+        x: data.x,
         opacity: [0.5, 0],
       }}
       transition={{
-        duration: 3 + Math.random() * 2,
+        duration: data.duration,
         repeat: Infinity,
+        delay: data.delay,
       }}
       className="absolute w-2 h-2 bg-cyan-400 rounded-full"
       style={{
-        left: Math.random() * 100 + '%',
-        top: Math.random() * 100 + '%',
+        left: data.left,
+        top: data.top,
       }}
     />
   );
@@ -68,8 +86,8 @@ const Hero = () => {
 
       {/* Partículas flutuantes */}
       <div className="absolute inset-0">
-        {Array.from({ length: 20 }).map((_, i) => (
-          <Particle key={i} delay={i * 0.1} />
+        {particles.map((data, i) => (
+          <Particle key={i} data={data} />
         ))}
       </div>
 
