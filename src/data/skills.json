@@ -31,7 +31,7 @@
     "id": 5,
     "name": "Tailwind CSS",
     "icon": "🎨",
-    "rating": 3,
+    "rating": 4,
     "color": "bg-cyan-500"
   },
   {
@@ -52,7 +52,7 @@
     "id": 8,
     "name": "SQL",
     "icon": "🗄️",
-    "rating": 3,
+    "rating": 4,
     "color": "bg-orange-600"
   },
   {
@@ -80,35 +80,56 @@
     "id": 12,
     "name": "Laravel",
     "icon": "📙",
-    "rating": 4,
+    "rating": 5,
     "color": "bg-orange-600"
   },
   {
     "id": 13,
-    "name": "Webhook",
-    "icon": "🔗",
-    "rating": 4,
-    "color": "bg-gray-600"
+    "name": "CRM",
+    "icon": "📊",
+    "rating": 3,
+    "color": "bg-green-500"
   },
   {
     "id": 14,
     "name": "A.I.",
     "icon": "🤖",
-    "rating": 2,
+    "rating": 3,
     "color": "bg-blue-600"
   },
   {
     "id": 15,
     "name": "SellFlux",
     "icon": "🛒",
-    "rating": 2,
+    "rating": 4,
     "color": "bg-gray-500"
   },
   {
     "id": 16,
-    "name": "n8n",
-    "icon": "🔧",
-    "rating": 1,
-    "color": "bg-orange-600"
+    "name": "Lovable",
+    "icon": "❤️",
+    "rating": 5,
+    "color": "bg-pink-500"
+  },
+  {
+    "id": 17,
+    "name": "Growth Hacking",
+    "icon": "📈",
+    "rating": 2,
+    "color": "bg-gray-700"
+  },
+  {
+    "id": 18,
+    "name": "SEO",
+    "icon": "🔍",
+    "rating": 3,
+    "color": "bg-green-700"
+  },
+  {
+    "id": 19,
+    "name": "Trafego Pago",
+    "icon": "💰",
+    "rating": 2,
+    "color": "bg-green-500"
   }
 ]

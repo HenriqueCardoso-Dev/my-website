@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "MORENT - ALUGUEL DE CARROS",
-    "description": "Projeto em desenvolvimento de um sistema de aluguel de carros, onde os usuários poderão navegar por uma variedade de veículos, selecionar datas de aluguel e concluir reservas. O sistema também incluirá funcionalidades para processamento de pagamentos e avaliações de clientes.",
+    "description": "Projeto descontinnuado de um sistema de aluguel de carros, onde os usuários poderiam navegar por uma variedade de veículos, selecionar datas de aluguel e concluir reservas. O sistema também incluiria funcionalidades para processamento de pagamentos e avaliações de clientes.",
     "image": "https://raw.githubusercontent.com/HenriqueCardoso-Dev/shopping-car/refs/heads/master/public/assets/img/Cover.png",
     "link": "https://shopping-car-nine.vercel.app"
   },
@@ -29,22 +29,22 @@
   },
   {
     "id": 5,
-    "title": "Mentor Claramente - em desenvolvimento",
-    "description": "Projeto em desenvolvimento de um sistema de agendamento de consultas e cadastros de profissionais terceirizados de uma clinica de psicologia implementado com um sistema de Saas independente",
+    "title": "Mentor website - Claramente",
+    "description": "Projeto em desenvolvimento de um sistema de agendamento de consultas e cadastros de profissionais terceirizados de uma clinica de psicologia, implementado com um Saas independente",
     "image": "https://github.com/HenriqueCardoso-Dev/my-website/blob/master/src/assets/ClaramenteBanner.png?raw=true",
-    "link": "https://mentor-claramente-dev.netlify.app"
+    "link": "https://mentor-claramente.netlify.app/"
   },
   {
     "id": 6,
     "title": "Gab's Estética Animal",
-    "description": "Projeto de um sistema de agendamento serviços de estética animal, onde os usuários podem marcar horários para seus pets, escolher os serviços desejados e receber notificações sobre os agendamentos. O sistema também inclui um painel de administração para gerenciar os agendamentos e os serviços oferecidos.",
+    "description": "Projeto conceito de um sistema de agendamento de serviços de estética animal, onde os usuários podem marcar horários para seus pets, escolher os serviços desejados e receber notificações sobre os agendamentos. O sistema também inclui um painel de administração para gerenciar os agendamentos e os serviços oferecidos.",
     "image": "https://github.com/HenriqueCardoso-Dev/my-website/blob/master/src/assets/gabs.png?raw=true",
     "link": "https://gabsesteticaanimal.lovable.app"
   },
   {
     "id": 7,
     "title": "Claramente - Landing Page",
-    "description": "Projeto de uma landing page para a clínica de psicologia Claramente, onde os visitantes podem obter informações sobre os serviços oferecidos, conhecer a equipe de profissionais e entrar em contato para agendar consultas. A landing page é projetada para ser atraente e informativa, incentivando os visitantes a se envolverem com a clínica.",
+    "description": "Landing page para a clínica de psicologia Claramente, onde os visitantes podem obter informações sobre os serviços oferecidos, conhecer a equipe de profissionais e entrar em contato para agendar consultas. A landing page é projetada para ser atraente e informativa, incentivando os visitantes a se envolverem com a clínica.",
     "image": "https://github.com/HenriqueCardoso-Dev/my-website/blob/master/src/assets/image.png?raw=true",
     "link": "https://claramente.psc.br"
   }
