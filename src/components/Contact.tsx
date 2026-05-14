@@ -52,46 +52,46 @@ const Contact = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="py-16 bg-linear-to-b from-gray-900 to-black pt-24"
+      className="py-16 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 pt-24"
     >
       <div className="mx-auto px-8 max-w-7xl">
         <h2 className="text-3xl font-bold mb-8 text-center text-white font-mono">Contato</h2>
         <div className="max-w-md mx-auto">
           <form onSubmit={handleSubmit(onSubmit, onError)} className="space-y-4">
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-300">Nome</label>
+              <label htmlFor="name" className="block text-sm font-medium text-slate-300">Nome</label>
               <input
                 {...register('name')}
                 type="text"
                 id="name"
-                className="mt-1 block w-full px-3 py-2 border border-gray-600 rounded-md shadow-sm bg-gray-800 text-white focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                className="mt-1 block w-full px-3 py-2 border border-slate-600 rounded-md shadow-sm bg-slate-900 text-white focus:outline-none focus:ring-emerald-500 focus:border-emerald-500"
               />
               {errors.name && <p className="text-red-400 text-sm">{errors.name.message}</p>}
             </div>
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-300">Email</label>
+              <label htmlFor="email" className="block text-sm font-medium text-slate-300">Email</label>
               <input
                 {...register('email')}
                 type="email"
                 id="email"
-                className="mt-1 block w-full px-3 py-2 border border-gray-600 rounded-md shadow-sm bg-gray-800 text-white focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                className="mt-1 block w-full px-3 py-2 border border-slate-600 rounded-md shadow-sm bg-slate-900 text-white focus:outline-none focus:ring-emerald-500 focus:border-emerald-500"
               />
               {errors.email && <p className="text-red-400 text-sm">{errors.email.message}</p>}
             </div>
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-300">Mensagem</label>
+              <label htmlFor="message" className="block text-sm font-medium text-slate-300">Mensagem</label>
               <textarea
                 {...register('message')}
                 id="message"
                 rows={4}
-                className="mt-1 block w-full px-3 py-2 border border-gray-600 rounded-md shadow-sm bg-gray-800 text-white focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                className="mt-1 block w-full px-3 py-2 border border-slate-600 rounded-md shadow-sm bg-slate-900 text-white focus:outline-none focus:ring-emerald-500 focus:border-emerald-500"
               />
               {errors.message && <p className="text-red-400 text-sm">{errors.message.message}</p>}
             </div>
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-linear-to-r from-blue-600 to-purple-600 text-white py-2 px-4 rounded-md hover:from-blue-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all disabled:opacity-50"
+              className="w-full bg-linear-to-r from-emerald-600 to-cyan-500 text-white py-2 px-4 rounded-md hover:from-emerald-700 hover:to-cyan-600 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 transition-all disabled:opacity-50"
             >
               {isSubmitting ? 'Enviando...' : 'Enviar'}
             </button>

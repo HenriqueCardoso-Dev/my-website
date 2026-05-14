@@ -10,12 +10,12 @@ const Header = () => {
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="bg-linear-to-r from-blue-900 to-purple-900 text-white py-6 shadow-lg sticky top-0 z-50"
+      className="bg-linear-to-r from-emerald-900 via-slate-950 to-cyan-900 text-white py-6 shadow-lg sticky top-0 z-50"
     >
       <div className="mx-auto px-8 flex justify-between items-center max-w-7xl">
         <motion.a
           href="#hero"
-          className="text-2xl font-bold font-mono cursor-pointer"
+          className="text-2xl font-bold font-mono cursor-pointer text-emerald-200"
           whileHover={{ scale: 1.05 }}
         >
           Henrique Cardoso
@@ -25,37 +25,37 @@ const Header = () => {
             <li>
               <a
                 href="#about"
-                className="hover:text-cyan-300 transition-colors duration-300 relative group"
+                className="hover:text-emerald-200 transition-colors duration-300 relative group"
               >
                 Sobre
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-300 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-200 transition-all duration-300 group-hover:w-full"></span>
               </a>
             </li>
             <li>
               <a
                 href="#skills"
-                className="hover:text-cyan-300 transition-colors duration-300 relative group"
+                className="hover:text-emerald-200 transition-colors duration-300 relative group"
               >
                 Tecnologias
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-300 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-200 transition-all duration-300 group-hover:w-full"></span>
               </a>
             </li>
             <li>
               <a
                 href="#projects"
-                className="hover:text-cyan-300 transition-colors duration-300 relative group"
+                className="hover:text-emerald-200 transition-colors duration-300 relative group"
               >
                 Projetos
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-300 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-200 transition-all duration-300 group-hover:w-full"></span>
               </a>
             </li>
             <li>
               <a
                 href="#contact"
-                className="hover:text-cyan-300 transition-colors duration-300 relative group"
+                className="hover:text-emerald-200 transition-colors duration-300 relative group"
               >
                 Contato
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-300 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-200 transition-all duration-300 group-hover:w-full"></span>
               </a>
             </li>
           </ul>
@@ -74,13 +74,13 @@ const Header = () => {
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: 'auto' }}
           exit={{ opacity: 0, height: 0 }}
-          className="md:hidden bg-linear-to-r from-blue-900 to-purple-900"
+          className="md:hidden bg-linear-to-r from-emerald-900 via-slate-950 to-cyan-900"
         >
           <ul className="flex flex-col space-y-4 py-4 px-8">
             <li>
               <a
                 href="#about"
-                className="hover:text-cyan-300 transition-colors duration-300"
+                className="hover:text-emerald-200 transition-colors duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Sobre
@@ -89,7 +89,7 @@ const Header = () => {
             <li>
               <a
                 href="#skills"
-                className="hover:text-cyan-300 transition-colors duration-300"
+                className="hover:text-emerald-200 transition-colors duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Tecnologias
@@ -98,7 +98,7 @@ const Header = () => {
             <li>
               <a
                 href="#projects"
-                className="hover:text-cyan-300 transition-colors duration-300"
+                className="hover:text-emerald-200 transition-colors duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Projetos
@@ -107,7 +107,7 @@ const Header = () => {
             <li>
               <a
                 href="#contact"
-                className="hover:text-cyan-300 transition-colors duration-300"
+                className="hover:text-emerald-200 transition-colors duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contato

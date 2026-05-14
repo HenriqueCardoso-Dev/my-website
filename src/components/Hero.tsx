@@ -1,19 +1,8 @@
 'use client';
 
 import { motion, easeInOut } from 'framer-motion';
-import { useEffect, useState } from 'react';
 
 const Hero = () => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
-    };
-
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -70,10 +59,11 @@ const Hero = () => {
   );
 
   return (
-    <section id="hero" className="relative w-full h-screen overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center">
+    <section id="hero" className="relative w-full h-screen overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-zinc-950 flex items-center justify-center">
       {/* Background com efeito grid */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(139,92,246,0.1)_1px,transparent_1px),linear-gradient(to_bottom,rgba(139,92,246,0.1)_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(16,185,129,0.14),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(56,189,248,0.08),transparent_30%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(52,211,153,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(52,211,153,0.08)_1px,transparent_1px)] bg-[size:4rem_4rem]" />
       </div>
 
       {/* Partículas flutuantes */}
@@ -82,16 +72,6 @@ const Hero = () => {
           <Particle key={i} delay={i * 0.1} />
         ))}
       </div>
-
-      {/* Efeito de luz do mouse */}
-      <motion.div
-        className="pointer-events-none absolute w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl opacity-20"
-        animate={{
-          x: mousePosition.x - 192,
-          y: mousePosition.y - 192,
-        }}
-        transition={{ type: 'spring', damping: 30, stiffness: 200 }}
-      />
 
       {/* Conteúdo principal */}
       <div className="relative z-10 max-w-7xl mx-auto px-8 text-center">
@@ -104,25 +84,25 @@ const Hero = () => {
           {/* Badge */}
           <motion.div variants={itemVariants}>
             <motion.div
-              className="inline-block px-4 py-2 rounded-full border border-cyan-400 bg-cyan-400/10 backdrop-blur-sm"
-              whileHover={{ scale: 1.05, boxShadow: '0 0 20px rgba(34, 211, 238, 0.5)' }}
-            >
-              <span className="text-cyan-300 text-sm font-semibold">✨ Bem-vindo ao meu portfólio</span>
-            </motion.div>
+            className="inline-block px-4 py-2 rounded-full border border-emerald-400 bg-emerald-400/10 backdrop-blur-sm"
+            whileHover={{ scale: 1.05, boxShadow: '0 0 20px rgba(16, 185, 129, 0.35)' }}
+          >
+            <span className="text-emerald-300 text-sm font-semibold">✨ Bem-vindo ao meu portfólio</span>
           </motion.div>
+        </motion.div>
 
-          {/* Título principal */}
+        {/* Título principal */}
           <motion.div variants={itemVariants} className="space-y-4">
             <div className="relative inline-block">
               <motion.h1
-                className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent"
+                className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold bg-gradient-to-r from-emerald-300 via-cyan-300 to-sky-400 bg-clip-text text-transparent"
                 animate={{ backgroundPosition: ['0%', '100%'] }}
                 transition={{ duration: 3, repeat: Infinity, repeatType: 'reverse' }}
               >
                 Olá, eu sou o Henrique!
               </motion.h1>
               <motion.div
-                className="absolute -inset-1 bg-gradient-to-r from-cyan-600 to-purple-600 rounded-lg blur opacity-25 -z-10"
+                className="absolute -inset-1 bg-gradient-to-r from-emerald-600 to-cyan-600 rounded-lg blur opacity-25 -z-10"
                 animate={{ opacity: [0.2, 0.5, 0.2] }}
                 transition={{ duration: 2, repeat: Infinity }}
               />
@@ -135,9 +115,8 @@ const Hero = () => {
             >
               Desenvolvedor Full Stack apaixonado por criar{' '}
               <motion.span
-                className="text-cyan-400 font-semibold"
-                animate={{ color: ['rgb(34, 211, 238)', 'rgb(168, 85, 247)', 'rgb(34, 211, 238)'] }}
-                transition={{ duration: 3, repeat: Infinity }}
+                className="text-emerald-300 font-semibold"
+                animate={{ color: ['rgb(16, 185, 129)', 'rgb(56, 189, 248)', 'rgb(16, 185, 129)'] }}
               >
                 experiências digitais
               </motion.span>
@@ -169,8 +148,8 @@ const Hero = () => {
           >
             <motion.a
               href="#about"
-              className="px-5 py-3 sm:px-7 sm:py-3 md:px-8 md:py-4 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold text-sm sm:text-base md:text-lg hover:shadow-2xl transition-shadow duration-300"
-              whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(34, 211, 238, 0.6)' }}
+              className="px-5 py-3 sm:px-7 sm:py-3 md:px-8 md:py-4 rounded-lg bg-gradient-to-r from-emerald-500 to-cyan-500 text-white font-semibold text-sm sm:text-base md:text-lg hover:shadow-2xl transition-shadow duration-300"
+              whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(16, 185, 129, 0.5)' }}
               whileTap={{ scale: 0.95 }}
             >
               Conhecer mais sobre mim
@@ -178,8 +157,8 @@ const Hero = () => {
 
             <motion.a
               href="#projects"
-              className="px-5 py-3 sm:px-7 sm:py-3 md:px-8 md:py-4 rounded-lg border-2 border-cyan-400 text-cyan-400 font-semibold text-sm sm:text-base md:text-lg hover:bg-cyan-400/10 transition-colors duration-300"
-              whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(34, 211, 238, 0.3)' }}
+              className="px-5 py-3 sm:px-7 sm:py-3 md:px-8 md:py-4 rounded-lg border-2 border-emerald-400 text-emerald-300 font-semibold text-sm sm:text-base md:text-lg hover:bg-emerald-400/10 transition-colors duration-300"
+              whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(16, 185, 129, 0.3)' }}
               whileTap={{ scale: 0.95 }}
             >
               Ver meus projetos
@@ -220,7 +199,7 @@ const Hero = () => {
 
       {/* Efeitos flutuantes decorativos */}
       <motion.div
-        className="absolute top-20 left-10 w-40 h-40 bg-purple-500 rounded-full filter blur-3xl opacity-20"
+        className="absolute top-20 left-10 w-40 h-40 bg-emerald-500 rounded-full filter blur-3xl opacity-20"
         animate={{ y: [0, 50, 0], x: [0, 30, 0] }}
         transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
       />
